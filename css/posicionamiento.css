@@ -1,0 +1,39 @@
+/*
+Ejemplo de posicionamiento en css
+*/
+
+.caja{
+    font-style: italic;
+    font-size: 18pt;
+    color: red;
+}
+
+#encabezado {
+    border-radius: 3px;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+}
+
+#subtitulo {
+    box-shadow: 10px 5px 5px red;
+    /*Por default el procesamiento es estatico
+    Checa como se posiciona la caja con otros tipos de posicionamiento
+    */
+    /*position: static;*/
+    /*position: absolute;*/
+    /*position: relative;*/
+    position: fixed;
+    top: 100px;
+    left: 10%;
+    width: 30%;
+}
+
+#derecha{
+    /*Las flotaciones son otro tipo de posicionamiento*/
+    float: right;
+    width: 30%;
+    border-right: 1px double green;
+    border-left: 1px double green;
+    background-color: aqua;
+}
+

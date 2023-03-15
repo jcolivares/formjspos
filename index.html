@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo formulario JS no obstrusivo y Posicionamiento CSS</title>
+    <link rel="stylesheet" href="css/posicionamiento.css">
     <script src="js/main.js"></script>
 </head>
 <!--<body onload="alert('hola!!')">-->
@@ -22,19 +23,31 @@
         </p>
         <p>Para el siguiente formulario desliza la barra</p>
         <p>Tambien escribe en la caja de texto...</p>
+        <form action="" method="get">
+            <!-- (div>label+input)*2 -->
+            <div>
+                <label for="semestre">Semestre: </label>
+                1<input type="range" name="semestre" id="semestre" min="1" max="12">12
+                <span id="s" class="caja"></span>
+            </div>
+            <div>
+                <label for="texto">Texto</label>
+                <input type="text" id="texto" name="texto">
+                <input type="text" id="txt" disabled>
+            </div>
+        </form>
+        <div id="otra">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rerum doloribus eos ipsa, maiores odio ullam. Possimus ab similique quam eligendi architecto ad delectus dolor voluptatem. Qui voluptatum et repudiandae?</p>
+            <p>Deleniti alias numquam quo doloribus adipisci, voluptate quibusdam iure maxime, fugiat ab perferendis id assumenda iusto aliquam cupiditate, recusandae ut! Ipsam id ad tempore reiciendis mollitia et debitis. Quae, fugiat?</p>
+            <p>Illo, quis perspiciatis voluptate beatae enim consectetur. Consectetur, officia veniam sit possimus id voluptate unde sequi ratione ipsum quasi eum distinctio nam mollitia quis ex incidunt? Et quisquam magnam consequatur.</p>
+            <p>Corporis, repellat illum debitis eius similique at error obcaecati totam harum temporibus. Delectus beatae ipsa, ad commodi itaque exercitationem laudantium maxime cumque necessitatibus tenetur saepe magni nihil sapiente modi temporibus?</p>
+            <p>Corrupti eius eveniet natus quasi ullam aliquid exercitationem beatae quas quibusdam sunt atque aliquam cupiditate, consequuntur repellendus? Excepturi illo neque vel, aperiam quidem, natus minus, voluptatum possimus fuga quae rem.</p>
+            <p>Ipsa obcaecati, eum quibusdam rerum quis, quia, laborum officia rem nulla accusantium neque itaque nostrum quasi. Sit reiciendis deleniti consectetur earum dignissimos id, eius fugiat, molestiae, vitae eos possimus minima?</p>
+            <p>Cupiditate adipisci incidunt corrupti repellendus commodi reprehenderit vitae aliquid nisi eveniet, dolores fuga aliquam deserunt eos facere perferendis neque quam saepe! Facilis hic cum expedita? Quidem repellendus ducimus at quibusdam.</p>
+            <p>Inventore at magnam commodi sint temporibus, qui enim ad asperiores voluptatem odit aspernatur quasi omnis ea est nobis tempora saepe quidem quibusdam culpa nemo hic? Voluptatem totam dicta nulla ut!</p>
+            <p>Inventore unde iure rerum corrupti, mollitia eos dolorum velit commodi, sed perferendis aliquid. Quod in veritatis, corporis dolor totam amet doloribus fugiat reiciendis quas ducimus, ullam suscipit deleniti eveniet excepturi.</p>
+            <p>Ratione, omnis. Incidunt, consequatur laboriosam. Debitis totam sequi reprehenderit itaque quo! Consequuntur, consectetur, saepe omnis quibusdam in aperiam tempora doloribus, temporibus harum asperiores unde officiis molestiae corporis illum dolorem quia.</p>
+        </div>
     </main>
-    <form action="" method="get">
-        <!-- (div>label+input)*2 -->
-        <div>
-            <label for="semestre">Semestre: </label>
-            1<input type="range" name="semestre" id="semestre" min="1" max="12">12
-            <span id="s" class="caja"></span>
-        </div>
-        <div>
-            <label for="texto">Texto</label>
-            <input type="text" id="texto" name="texto">
-            <input type="text" id="txt" disabled>
-        </div>
-    </form>
 </body>
 </html>
