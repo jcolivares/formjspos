@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario JS no obstrusivo y Posicionamiento CSS</title>
+    <script src="js/main.js"></script>
+</head>
+<!--<body onload="alert('hola!!')">-->
+<body>
+    <header id="encabezado">
+        <h1>Ejemplo de formulario HTML 5</h1>
+        <hr>
+    </header>
+    <main id="contenido">
+        <h2 id="subtitulo">Explicacion</h2>
+        <p>Favor de dar click en el subtitulo anterior</p>
+        <p id="derecha">
+            Como veras se puede acceder a los elementos de forma dinamica. 
+            No es necesario incluir los eventos en html.
+        </p>
+        <p>Para el siguiente formulario desliza la barra</p>
+        <p>Tambien escribe en la caja de texto...</p>
+    </main>
+    <form action="" method="get">
+        <!-- (div>label+input)*2 -->
+        <div>
+            <label for="semestre">Semestre: </label>
+            1<input type="range" name="semestre" id="semestre" min="1" max="12">12
+            <span id="s" class="caja"></span>
+        </div>
+        <div>
+            <label for="texto">Texto</label>
+            <input type="text" id="texto" name="texto">
+            <input type="text" id="txt" disabled>
+        </div>
+    </form>
+</body>
+</html>
